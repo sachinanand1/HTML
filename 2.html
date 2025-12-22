@@ -1,0 +1,191 @@
+<!--
+    This is Page 2 of HTML course
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <header>
+        <h3>This is page header</h3>
+
+        <nav>
+            <a href="/html">HTML</a>
+            <a href="/css">CSS</a>
+            <a href="/javascript">Javascript</a>
+        </nav>
+    </header>
+
+    <h2>If you have an "why" you don't  need a "how".</h2>
+    <h3>That means when you know why you are doing something, then there is no need to how you will do it. You will just do it no matter what.</h3>
+
+    <hr>
+
+    <h3>Semantic Markup</h3>
+    <p>It is the markup that relates to the meaning of the content. Eg- heading, paragraph, image, header, footer, nav-tag, etc. </p>
+
+    <h3>Non-Semantic Markup</h3>
+    <p>It is the markup that relates to the meaning of the content. Eg- div, span, etc. </p>
+
+    <br>
+    <p> <b>Semantic Tags</b> </p>
+    <ol>
+        <li>Header tag - header of the page</li>
+        <li>Footer tag - footer of the page</li>
+        <li>Main-tag - has the main content of the page</li>
+        <li>Nav-tag - for Navigation of the page</li>
+        <li>Article Tag </li>
+        <li>Section Tag - to group together similar content</li>
+        <li>Aside Tag - for related links or content</li>
+    </ol>
+
+    <hr>
+    <p>This page will have a Header (header-tag) and a Footer (footer-tag) with the Nav-bar (nav-tag) and different sections (section-tag) as well.</p>
+
+    <h3>HTML Entites (Character Reference)</h3>
+    <p>An HTML entity is a piece of text ('string') that begins with an ampersand(&) and ends with a semicolon(;)</p>
+    <p>
+        It's used to display reserve characters (which would otherwise be interpreted as HTML code), and
+        invisible characters (like non-breaking spaces).
+    </p>
+    <p>
+        Can also be used for characters (symbols, emoji) that are difficult ot type with a standard keyboard eg.- heart symbol, sun symbol, etc.
+    </p>
+    <p>
+        Some exaples are below- 
+        <ul>
+            <li>a &lt; b</li>
+            <li>a &gt; b</li>
+            <li>p &amp; q</li>
+            <li>p &quot; q &quot;</li>
+            <li>c &nbsp; &nbsp; d (space between c and d)</li>
+            <li>made with &hearts;</li>
+        </ul>
+    </p>
+    <img src="/pic/entities.png" alt="HTML Entities" height=" 400" width="400" >
+    <br>
+    <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">For Full List of HTML named character references</a>
+
+    <h3>Documentation:</h3>
+    <p>Cheat sheet - <a href="https://docs.emmet.io/cheat-sheet/">Emmet Documentation</a>/</p>
+    
+    <p>With the help of emmits you can code faster for example (&gt; and &lt;) parent-child and (+ and * ) siblings using these you can create realations between tags.</p>
+
+    <hr>
+
+    <h2>Tables in HTML</h2>
+
+    <p>Tables are used to represent real life table data.</p>
+
+    <table border=solid>
+        <caption>Table Caption</caption>
+        <tr>
+            <th>header 1</th>
+            <th>header 2</th>
+        </tr>
+
+        <tr>
+            <td>table data1</td>
+            <td>table data2</td>
+        </tr>
+
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+        </tr>
+    </table>
+
+    <p>
+        <b>Semantics in Table</b> 
+        <ul>
+            <li>thead-tag - to wrap table header. </li>
+            <li>tbody-tag - to wrap table body.</li>
+            <li>tfoot-tag - to wrap table footer.</li>
+        </ul>
+        
+    </p>
+
+    <table border=solid>
+        <caption>Bill</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>B</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>C</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td><b>Total</b></td>
+                <td>50</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h3>Colspan & Rowspan Tags in table</h3>
+    <p>By default span (area) = 1 row and 1 col. But we can define the area as per need using colspan and rowspan tags</p>
+
+    <table border=solid>
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <td>Delhi Price</td>
+                <td>Mumbai Price</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>Apple</td>
+                <td>20</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Milk</td>
+                <td>34</td>
+                <td>52</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <p>Checking if the website is still alive?</p>
+
+    <footer>
+        <h3>This is page footer</h3>
+    </footer>
+</body>
+</html>
