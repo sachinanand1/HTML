@@ -1,0 +1,197 @@
+<!--
+    This is the Page-3 of HTML course
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Page</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+
+    <p><b>Forms</b> are used to take data from the user, </p>
+
+
+    <p><b>Action Attribute</b> - is used to define what action needs to be performed when a form is submitted or where the form data should be sent</p>
+    <br>
+
+    <h3>Form Elements</h3>
+    <p><b>Input Attribute</b> are used to create multiple form controls, there are multiple types of inputs taht can be created using type attribute. Eg - input type = 
+        <ul>
+            <li>text</li>
+            <li>password</li>
+            <li>date</li>
+            <li>time</li>
+            <li>color, ect</li>
+        </ul>
+    </p>
+    <input/>
+    <input type="color">
+
+    <p><b>Placceholder Attribute</b> - Used to show what information is asked to input</p>
+
+    <p>Below is an example of a form containing differ input types - </p>
+    <form action="/action">
+        Username 
+        <input type="text">
+        <br>
+        Password <input type="password">
+        <br>
+        Date<input type="date">
+        <br>
+        Time<input type="time">
+        <br>
+        Numer <input type="number">
+
+    </form>
+
+    <p>Now using the Placeholder attribute in the form</p>
+    <form action="/action">
+        Username
+        <input type="text" placeholder="Enter username">
+        <br>
+        Password 
+        <input type="password" placeholder="Enter Password"> 
+    </form>
+
+    <hr>
+
+    <h3>Labels</h3>
+    <p>
+        A <b>label</b> element represents a caption for an item in a user interface.
+    </p>
+
+
+    <form action="/action">
+        <label>
+            Username <input type="text" placeholder="enter username">
+            <br>
+            Password <input type="password" placeholder="enter password">
+        </label>
+    </form>
+
+    <br>
+    <h3>Label Classical approach</h3>
+
+    <form action="/action">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="enter username" id="username"/>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="enter password" id="password"/>
+        </div>
+    </form>
+
+    <hr>
+    <h3>Button Element</h3>
+    <p><b>Note:</b> If we create a button outside of a form then it's default behaviour is nothing</p>
+    <p>If we create a button inside a form then it's default behaviour is to submit (send) informationto given address(location)</p>
+
+    <p><b>Type Attribute</b> submit, button, reset (clears the contents fo filled form</p>
+    <br>
+
+    <h3>Name Attribute</h3>
+    <p><b>Name</b> of the form control. Submitted with the form as part of (name/value) pair</p>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query"/ placeholder="Search on YouTube">
+        <button>search</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Search on Google" name="q"/>
+        <button>search</button>
+    </form>
+
+    <hr>
+    <h3>Checkbox</h3>
+    <p>
+        <b>Checkboxes</b> are used to give user multiple options to select
+    </p>
+    <p><b>Checked</b> attribute is used to create by default already checked in the checkbox</p>
+
+    <form action="/server">
+        <div>
+            <input type="checkbox" id="age" name="age" checked>
+            <label for="age">I am 18+</label>
+        </div>
+    </form>
+
+    <h3>Radio Button</h3>
+    <p>Used for single option</p>
+    <p><b>Note:</b> all the groupde must have same <u>name</u> value.</p>
+
+    <form action="/server">
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+        </div>
+    </form>
+
+ 
+    <p><b>Note:</b> we can also group together checkboxes</p>
+    <form action="/server">
+        <div>
+            Choose your subjects:
+            <input type="checkbox" id="math" name="subject" value="math"/>
+            <label for="math">Math</label>
+
+            <input type="checkbox" id="science" name="subject" value="science"/>
+            <label for="science">Science</label>
+        </div>
+        <button>submit</button>
+        <button type="reset">Clear All</button>
+    </form>
+
+    <hr>
+    <h3>Select Element - Dropdown</h3>
+
+    <form action="/server">
+        <div>
+            Choose Your Profession:
+            <select name="profession" id="profession">
+                <option>Select your profession</option>
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+            </select>
+            <button>sumbit</button>
+        </div>
+    </form>
+
+    <h3>Range Element</h3>
+    <form action="/server">
+        <div>
+            <label for="vol">Select your volume level:</label>
+            <input type="range" id="vol" name="vol" min="0" max="100">
+        </div>
+        <button>submit</button>
+    </form>
+
+    <br>
+    <p><b>Step attribute</b> to increase or decrease range by step</p>
+    <p><b>Note:</b> If we want to have pre-defined given value to the range we use value attribute</p>
+
+    <form action="/server">
+        <div>
+            <label for="vol">Select your volume level:</label>
+            <input type="range" id="vol" name="vol" min="0" max="100" step="5" value="10">
+        </div>
+        <button>submit</button>
+    </form>
+
+    <hr>
+    <h3>Text Area</h3>
+    <form action="/server">
+        <div>
+            <label for="feedback">Feedback:</label>
+            <textarea name="feedback" id="feedback" cols="20" rows="3" placeholder="Please write your feedback here">
+            </textarea>
+        </div>
+        <button>submit</button>
+    </form>
+</body>
+</html>
